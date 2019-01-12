@@ -6,7 +6,7 @@ h1 {
     text-align: center;
 }
 
-#cart {
+#cart{
     display: flex;
     justify-content: center;
     border-top: 5px solid black;
@@ -14,7 +14,7 @@ h1 {
 }
 
 .column {
-    width: 18%;
+    width: auto;
     padding: 25px 0px;
 }
 
@@ -23,7 +23,14 @@ h1 {
     height: 100px;
     width: auto;
     margin: 20px;
+    transition: height 2s, width 2s;
 }
+
+#images img:hover {
+    height: 300px;
+    width: auto;
+}
+
 
 #songs p {
     font-size: 18px;
@@ -53,10 +60,25 @@ h1 {
     margin: 20px;
 }
 
+#delete button{
+    color: red;
+    display: block;
+    font-size: 18px;
+    height: 100px;
+    width: 100px;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+}
+
+#delete button:hover{
+    box-shadow: 10px 10px 10px red;
+}
+
 #form {
-    width: 75%;
+    width: 60%;
     margin: 0 auto 20px auto;
     font-size: 18px;
+    text-align: center;
 }
 
 input {
@@ -67,4 +89,10 @@ input {
 button {
     font-size: 14px;
     padding: 5px 10px;
+}
+
+#add:hover {
+    box-shadow: 5px 5px black;
+    
+    
 }

@@ -1,7 +1,7 @@
 body {
     background-color:black;
     animation-name: backgroundcolorchange;
-    animation-duration: 50s;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
 }
 

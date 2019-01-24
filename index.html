@@ -6,10 +6,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Your CSS -->
         <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
     </head>
 
     <body>
-        <h1>My Playlist</h1>
+        <h1 id="colors">My Playlist</h1>
+        
+        <span>
+        <img class="image" id="image1" src="https://i.imgur.com/75tvQck.gif">
+        <img class="image" id="image2" src="https://i.imgur.com/75tvQck.gif">
+        </span>
+    
         <div id="form">
             <p>Add a new song:</p>
             <input placeholder="Song Name" id="song">
@@ -19,6 +26,15 @@
             <input placeholder="Song Link Address" id="link">
             <button id="add">Add</button>
         </div>
+        
+        <div id="deleteform">
+            <p>Delete a song.</p>
+            <span>
+                <input placeholder="Song Index" id="delete">
+                <button class="delete">Delete</button>
+            </span>
+        </div>
+        
         <div id="cart">
             <div class="column" id="images">
             
@@ -34,9 +50,6 @@
             </div>
             <div class="column" id="links">
             
-            </div>
-            <div class="column" id="delete">
-                
             </div>
         </div>
         <!-- jQuery -->

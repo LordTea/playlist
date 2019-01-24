@@ -25,12 +25,22 @@ function emptySongInfo(){
     $("#artists").empty();
     $("#lengths").empty();
     $("#links").empty();
-
 }
 
-function deleteSong(){
-    
+function deleteSong(index){
+    songs["Title"].splice(index, 1);
+    songs["Image Link"].splice(index, 1);
+    songs["Artists"].splice(index, 1);
+    songs["Links"].splice(index, 1);
+    songs["Duration"].splice(index, 1);
 }
+
+$(".delete").click(function(){
+    var deleteindex = $("#delete").val();
+    emptySongInfo();
+    deleteSong(deleteindex);
+    displaySongInfo();
+});
 
 function addSongInfo(){
     // BELOW write the code to add new items to each of the arrays.
@@ -73,15 +83,11 @@ function displaySongInfo(){
     songs["Duration"].forEach(function(x){
         $("#lengths").append("<p>'"+x+"'</p>"); 
     });
-    
+
     songs["Links"].forEach(function(x){
         $("#links").append("<a href='"+x+"'>Listen</a>"); 
     });
-    
-    songs["Links"].forEach(function(){
-        $("#delete").append("<button class='delete'>Delete</button>"); 
-    });
-    
+
 }
 
 displaySongInfo();

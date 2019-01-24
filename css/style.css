@@ -1,9 +1,24 @@
 body {
-    background-color: skyblue;
+    background-color:black;
+    animation-name: backgroundcolorchange;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
 }
 
 h1 {
     text-align: center;
+}
+
+#image1{
+    float: left;
+    width: 100px;
+    margin-left: 50px;
+}
+
+#image2{
+    float: right;
+    width: 100px;
+    margin-right: 50px;
 }
 
 #cart{
@@ -81,6 +96,13 @@ h1 {
     text-align: center;
 }
 
+#deleteform {
+    width: 60%;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
 input {
     padding: 5px 10px;
     font-size: 14px;
@@ -95,4 +117,58 @@ button {
     box-shadow: 5px 5px black;
     
     
+}
+
+#colors{
+    font-size: 40px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundcolorchange{
+    0% {background-color:black;}
+    10% {background-color:red;}
+    15% {background-color:orange;}
+    20% {background-color:yellow;}
+    25% {background-color:green;}
+    30% {background-color:blue;}
+    35% {background-color:indigo;}
+    40% {background-color:violet;}
+    45% {background-color:pink;}
+    50% {background-color:white;}
+    55% {background-color:white;}
+    60% {background-color:pink;}
+    65% {background-color:violet;}
+    70% {background-color:indigo;}
+    75% {background-color:blue;}
+    80% {background-color:green;}
+    85% {background-color:yellow;}
+    90% {background-color:orange;}
+    95% {background-color:red;}
+    100% {background-color:black;}
+}
+
+@keyframes colorchange{
+    0% {color:black;}
+    10% {color:red;}
+    15% {color:orange;}
+    20% {color:yellow;}
+    25% {color:green;}
+    30% {color:blue;}
+    35% {color:indigo;}
+    40% {color:violet;}
+    45% {color:pink;}
+    50% {color:white;}
+    55% {color:white;}
+    60% {color:pink;}
+    65% {color:violet;}
+    70% {color:indigo;}
+    75% {color:blue;}
+    80% {color:green;}
+    85% {color:yellow;}
+    90% {color:orange;}
+    95% {color:red;}
+    100% {color:black;}
 }
